@@ -13,7 +13,7 @@ import {
   Heart,
   Package,
 } from 'lucide-react';
-import gclFlyer from '@assets/GCL_WEB_LOGO_1789703659771.png';
+const gclFlyer = '';
 
 type Product = {
   id: string;

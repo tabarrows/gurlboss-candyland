@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gcl-cream text-gray-800 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gcl-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-gcl-pink-500/30 transition-all hover:bg-gcl-pink-600 hover:shadow-xl hover:shadow-gcl-pink-500/40 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-gcl-pink-600 border-2 border-gcl-pink-200 transition-all hover:border-gcl-pink-400 hover:text-gcl-pink-700 active:scale-95;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white hover:text-gcl-pink-600 active:scale-95;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all hover:shadow-lg;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-800 placeholder-gray-400 outline-none transition-all focus:border-gcl-pink-400 focus:ring-2 focus:ring-gcl-pink-100;
+  }
+  .section-title {
+    @apply text-2xl font-bold text-gray-900 sm:text-3xl;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fff9fb;
+}
+::-webkit-scrollbar-thumb {
+  background: #f7a8c0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4889;
+}
